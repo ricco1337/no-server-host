@@ -1,0 +1,202 @@
+.button-group {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 4% 0 60%; }
+  .button-group div {
+    border-radius: 4px;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 0 8px; }
+    .button-group div:hover {
+      border-color: black;
+      color: black;
+      cursor: pointer;
+      transition: 0.5s ease;
+      transform: scale(1.2); }
+
+.contact {
+  margin: -42%;
+  margin-left: 50%; }
+
+.contact-buttons {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 4% 0 60%; }
+  .contact-buttons div {
+    border-radius: 4px;
+    padding: 15px;
+    border: 2px solid white;
+    margin: 0 8px; }
+    .contact-buttons div:hover {
+      border-color: white;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s ease;
+      transform: scale(1.2); }
+
+.contact-page {
+  background: url("img/typical.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+
+.button-about {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 600px 0 46%; }
+  .button-about div {
+    border-radius: 4px;
+    padding: 15px;
+    border: 2px solid white;
+    margin: 0 16px; }
+    .button-about div:hover {
+      border-color: white;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s ease;
+      transform: scale(1.2); }
+
+.floating-box {
+  display: inline-block;
+  width: 70%;
+  height: 30%;
+  margin: 10px;
+  background-color: #ffffff;
+  margin-top: -11%;
+  margin-left: 16%;
+  opacity: 0.23; }
+
+.about-beard {
+  width: 300px;
+  border-radius: 23%;
+  padding: 12px 20px;
+  margin-left: 38%;
+  margin-top: -.7%; }
+  .about-beard:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.1); }
+
+.typ-home {
+  width: 1000px;
+  padding-right: 108px;
+  padding-top: 60px;
+  filter: blur(0px);
+  transition: 0.2s ease-in; }
+  .typ-home:hover {
+    filter: blur(5px);
+    transition: 0.4s ease; }
+
+.come {
+  margin-top: -9%;
+  margin-left: 35em;
+  width: 18%;
+  padding-bottom: 9.8em; }
+
+.up {
+  width: 14%;
+  margin-top: -347px;
+  margin-left: 46%; }
+  .up:hover {
+    margin-bottom: 100px;
+    -webkit-transition: margin 1s;
+    -moz-transition: margin 1s;
+    transition: margin 1s; }
+
+.typ-about {
+  width: 86rem;
+  margin-left: 7em;
+  padding-top: 6%; }
+
+.home-ig {
+  width: 156px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px 8px;
+  margin-left: -1%;
+  margin-top: 20%; }
+  .home-ig:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.4); }
+
+.about-page {
+  background: url("img/wrap.jpg");
+  background-size: cover;
+  height: 88vh;
+  width: 100%; }
+
+.home-page {
+  background: url("img/rip.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+
+img {
+  width: 100vw;
+  padding: 63px; }
+
+.img-slide {
+  width: 100vw;
+  height: 650px;
+  overflow: hidden;
+  position: relative; }
+  .img-slide .inner {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: left 0.25s ease-out; }
+
+.bubbles {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 56px; }
+  .bubbles .bubble {
+    margin: 2.5px;
+    background-color: white;
+    border-radius: 100000px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    opacity: 0.25;
+    transition: opacity 0.1s linear;
+    cursor: pointer; }
+    .bubbles .bubble:hover {
+      opacity: 0.65; }
+    .bubbles .bubble.active {
+      opacity: 1; }
+
+.next::after,
+.prev::after {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: white;
+  font-size: 30px;
+  width: 1em;
+  height: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(-50%);
+  line-height: 3em;
+  box-sizing: border-box;
+  padding: 0 0.2em;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.1s linear; }
+
+.next:hover::after,
+.prev:hover::after {
+  opacity: 1; }
+
+.prev::after {
+  content: '<';
+  left: 0; }

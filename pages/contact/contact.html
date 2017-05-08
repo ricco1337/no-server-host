@@ -1,0 +1,44 @@
+<div>
+<div class="contact-page">
+  <div class='contact-buttons'>
+    <div ui-sref='home'>Home</div>
+    <div ui-sref='about'>About</div>
+    <div ui-sref='shop'>Shop</div>
+    <div ui-sref='portfolio'>Portfolio</div>
+    <div><a href="https://www.instagram.com/atypical.designs/?hl=en"  aria-hidden="true">Instagram</a></div>
+  </div>
+<div class="container">
+  <div class="overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contact" >
+  <h1> Contact </h1>
+
+
+  <div class='contact-container'>
+    <form name="contact-form" validation>
+      <div data-ng-hide="formError()"></div>
+      <!-- User Name -->
+      <div class='row'>
+        <input type="text" name='name' data-ng-model='contactData.Name'
+        placeholder='Full name' data-ng-minLength='3' required />
+      </div>
+  <!-- User Email -->
+      <div class='row'>
+        <input type="text" name='email' data-ng-model='contactData.Email'
+        placeholder='name@email.com' data-ng-minLength='3' required />
+      </div>
+<!-- user message -->
+      <div class='row'>
+         <textarea data-ng-model='contactData.message' rows="8" id='inputMessage' placeholder='Text here...'></textarea>
+      </div>
+  <div class='row'>
+     <input type='submit' data-ng-disabled='submitButtonDisabled'
+     data-ng-click='subitContactForm()'/>
+</div>
+  </div>
+</div>
